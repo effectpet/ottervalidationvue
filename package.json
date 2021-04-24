@@ -1,0 +1,43 @@
+{
+  "name": "ottervalidationvue",
+  "version": "1.0.5",
+  "description": "Fast, lightweight validation with full typescript support",
+  "keywords": [
+    "typescript",
+    "validation",
+    "vue"
+  ],
+  "license": "MIT",
+  "author": "Johannes Vogt <vogt.joo@googlemail.com>",
+  "homepage": "https://github.com/effectpet/ottervalidationvue",
+  "bugs": {
+    "url": "https://github.com/effectpet/ottervalidationvue/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/effectpet/ottervalidationvue.git"
+  },
+  "main": "./dist/index.js",
+  "files": [
+    "dist/**/*.js",
+    "dist/**/*.d.ts"
+  ],
+  "scripts": {
+    "build": "rimraf ./dist && tsc",
+    "lint": "eslint . --ext .ts",
+    "prepublishOnly": "npm run lint && npm run build"
+  },
+  "dependencies": {
+    "ottervalidation": "^1.0.5",
+    "vue-demi": "^0.7.5"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
+    "eslint": "^7.24.0",
+    "eslint-config-airbnb-typescript": "^12.3.1",
+    "eslint-plugin-import": "^2.22.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.2.4"
+  }
+}
